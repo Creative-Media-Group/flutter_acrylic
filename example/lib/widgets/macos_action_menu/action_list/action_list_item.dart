@@ -75,8 +75,8 @@ class _ActionListItemState extends State<ActionListItem> {
           decoration: BoxDecoration(
             color: Theme.of(context)
                 .colorScheme
-                .background
-                .withOpacity(_getBackgroundOpacity()),
+                .surface
+                .withValues(alpha: _getBackgroundOpacity()),
           ),
           child: SizedBox(
             width: double.infinity,

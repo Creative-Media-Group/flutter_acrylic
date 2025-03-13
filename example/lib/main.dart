@@ -311,10 +311,10 @@ class MyAppBodyState extends State<MyAppBody> {
     );
   }
 
-  ButtonBar buildActionButtonBar(BuildContext context) {
-    return ButtonBar(
+  OverflowBar buildActionButtonBar(BuildContext context) {
+    return OverflowBar(
       alignment: MainAxisAlignment.start,
-      overflowButtonSpacing: 4.0,
+      overflowSpacing: 4.0,
       children: [
         ElevatedButton(
           onPressed: () => setState(() {
@@ -831,11 +831,11 @@ class WindowTitleBar extends StatelessWidget {
                           : Colors.white,
                       normal: Colors.transparent,
                       mouseOver: brightness == InterfaceBrightness.light
-                          ? Colors.black.withOpacity(0.04)
-                          : Colors.white.withOpacity(0.04),
+                          ? Colors.black.withValues(alpha: 0.04)
+                          : Colors.white.withValues(alpha: 0.04),
                       mouseDown: brightness == InterfaceBrightness.light
-                          ? Colors.black.withOpacity(0.08)
-                          : Colors.white.withOpacity(0.08),
+                          ? Colors.black.withValues(alpha: 0.08)
+                          : Colors.white.withValues(alpha: 0.08),
                     ),
                   ),
                   MaximizeWindowButton(
@@ -851,11 +851,11 @@ class WindowTitleBar extends StatelessWidget {
                           : Colors.white,
                       normal: Colors.transparent,
                       mouseOver: brightness == InterfaceBrightness.light
-                          ? Colors.black.withOpacity(0.04)
-                          : Colors.white.withOpacity(0.04),
+                          ? Colors.black.withValues(alpha: 0.04)
+                          : Colors.white.withValues(alpha: 0.04),
                       mouseDown: brightness == InterfaceBrightness.light
-                          ? Colors.black.withOpacity(0.08)
-                          : Colors.white.withOpacity(0.08),
+                          ? Colors.black.withValues(alpha: 0.08)
+                          : Colors.white.withValues(alpha: 0.08),
                     ),
                   ),
                   CloseWindowButton(
@@ -874,11 +874,11 @@ class WindowTitleBar extends StatelessWidget {
                           : Colors.white,
                       normal: Colors.transparent,
                       mouseOver: brightness == InterfaceBrightness.light
-                          ? Colors.black.withOpacity(0.04)
-                          : Colors.white.withOpacity(0.04),
+                          ? Colors.black.withValues(alpha: 0.04)
+                          : Colors.white.withValues(alpha: 0.04),
                       mouseDown: brightness == InterfaceBrightness.light
-                          ? Colors.black.withOpacity(0.08)
-                          : Colors.white.withOpacity(0.08),
+                          ? Colors.black.withValues(alpha: 0.08)
+                          : Colors.white.withValues(alpha: 0.08),
                     ),
                   ),
                 ],

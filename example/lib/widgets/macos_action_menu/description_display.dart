@@ -22,7 +22,7 @@ class DescriptionDisplay extends StatelessWidget {
         width: double.infinity,
         constraints: BoxConstraints(maxHeight: maxHeight),
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.background,
+          color: Theme.of(context).colorScheme.surface,
           borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(5.0),
             bottomRight: Radius.circular(5.0),
